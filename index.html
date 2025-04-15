@@ -2,97 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nova XP</title>
+  <title>Nova XP - Future of Retro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #3a6ea5, #b4d0ef);
-      color: black;
-      text-align: center;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .window {
-      max-width: 600px;
-      margin: 80px auto;
-      background-color: #ffffff;
-      border: 2px solid #1c5aa6;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
-
-    .title-bar {
-      background: linear-gradient(to right, #1c5aa6, #3a82f7);
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
-      padding: 10px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      text-align: left;
-      font-weight: bold;
-      font-size: 1.2em;
       display: flex;
       align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
 
-    .title-bar span {
-      margin-left: 10px;
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      animation: pop 0.8s ease;
     }
 
-    .content {
-      padding: 25px;
-    }
-
-    .content h1 {
-      font-size: 2em;
+    h1 {
+      font-size: 3em;
       margin-bottom: 10px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .content p {
-      font-size: 1.1em;
+    p {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-bottom: 30px;
     }
 
-    .btn {
+    .button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: linear-gradient(to bottom, #cce6ff, #66aaff);
-      border: 2px solid #1c5aa6;
-      color: black;
+      padding: 14px 28px;
+      font-size: 1em;
       font-weight: bold;
-      text-decoration: none;
       border-radius: 8px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      color: #003366;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
-    .btn:hover {
-      background: #a3d1ff;
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+
+    .version {
+      margin-top: 20px;
+      font-size: 0.9em;
+      opacity: 0.6;
+    }
+
+    @keyframes pop {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #fff;
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8em;
+      opacity: 0.4;
     }
   </style>
 </head>
 <body>
-
-  <div class="window">
-    <div class="title-bar">
-      🪟 <span>Nova XP Setup</span>
-    </div>
-    <div class="content">
-      <h1>Welcome to Nova XP</h1>
-      <p>The future of retro computing is here.<br>
-      Experience the charm of Windows XP with a modern twist.</p>
-
-      <a href="NovaXP.iso" class="btn">⬇️ Download NovaXP.iso</a>
-    </div>
+  <div class="container">
+    <h1>Nova XP</h1>
+    <p>The future of retro computing.  
+       A modern OS with XP soul built from scratch.</p>
+    <a href="NovaXP.iso" class="button">⬇️ Download ISO</a>
+    <div class="version">v1.0 • Cosmos-powered</div>
   </div>
-
-  <footer>
-    &copy; 2025 Nova XP. Built with love, not affiliated with Microsoft.
-  </footer>
-
+  <footer>&copy; 2025 Nova XP. Built with love. Not affiliated with Microsoft.</footer>
 </body>
 </html>
