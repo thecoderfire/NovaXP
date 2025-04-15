@@ -1,11 +1,98 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My OS</title>
+  <meta charset="UTF-8">
+  <title>Nova XP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #3a6ea5, #b4d0ef);
+      color: black;
+      text-align: center;
+    }
+
+    .window {
+      max-width: 600px;
+      margin: 80px auto;
+      background-color: #ffffff;
+      border: 2px solid #1c5aa6;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .title-bar {
+      background: linear-gradient(to right, #1c5aa6, #3a82f7);
+      color: white;
+      padding: 10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+    }
+
+    .title-bar span {
+      margin-left: 10px;
+    }
+
+    .content {
+      padding: 25px;
+    }
+
+    .content h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 1.1em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: linear-gradient(to bottom, #cce6ff, #66aaff);
+      border: 2px solid #1c5aa6;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background: #a3d1ff;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to NovaXP</h1>
-  <p>A free, custom-built OS that looks like Windows XP but cooler.</p>
+
+  <div class="window">
+    <div class="title-bar">
+      🪟 <span>Nova XP Setup</span>
+    </div>
+    <div class="content">
+      <h1>Welcome to Nova XP</h1>
+      <p>The future of retro computing is here.<br>
+      Experience the charm of Windows XP with a modern twist.</p>
+
+      <a href="NovaXP.iso" class="btn">⬇️ Download NovaXP.iso</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Nova XP. Built with love, not affiliated with Microsoft.
+  </footer>
+
 </body>
 </html>
